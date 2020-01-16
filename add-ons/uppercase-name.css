@@ -1,0 +1,4 @@
+/* Uppercase name */
+.pagename a {
+    text-transform: uppercase;
+}
