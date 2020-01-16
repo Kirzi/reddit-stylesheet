@@ -1,0 +1,6 @@
+/* Colored link flairs */
+.linkflair-red .linkflairlabel, .res-nightmode .linkflair-red .linkflairlabel, .flairoptionpane .linkflair-red .linkflairlabel {background-color: #f00} .linkflair-update .linkflairlabel:hover {background-color: #f00!important}
+.linkflair-red:hover, .linkflair-red .link.RES-keyNav-activeElement {border-right-color:#f00!important}
+
+.linkflair-blue .linkflairlabel, .res-nightmode .linkflair-blue .linkflairlabel, .flairoptionpane .linkflair-blue .linkflairlabel {background-color: #00f} .linkflair-blue .linkflairlabel:hover {background-color: #00f!important}
+.linkflair-blue:hover, .linkflair-blue .link.RES-keyNav-activeElement {border-right-color:#00f!important}
