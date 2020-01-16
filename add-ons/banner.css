@@ -1,0 +1,5 @@
+/* Image banner */
+#header {
+    background: url(%%banner%%);
+    min-height: 200px; 
+}

@@ -1,0 +1,46 @@
+a,
+.md a,
+.side a {
+    color: #0097A7;
+}
+.md a,
+.res-nightmode .md a,
+.res-nightmode .side a,
+.entry .flat-list li a[onclick*=reply],
+.entry:hover .flat-list li a[onclick*=reply],
+#header .tabmenu .selected a,
+.thing.stickied a.title,
+.tagline .stickied-tagline,
+.search-result-meta .stickied-tagline {
+    color: #0097A7!important;
+}
+
+#header,
+.btn a,
+.usertext button,
+.btn,
+.button,
+.morelink a,
+.res-nightmode .btn a,
+.res-nightmode .usertext button,
+.res-nightmode .btn,
+.res-nightmode .button {
+    background-color: #0097A7;
+}
+
+.listing-page .thing.link.stickied {
+    border-color: #0097A7;
+    background: #0097A710;
+}
+
+.btn a:hover,
+.usertext button:hover,
+.btn:hover,
+.button:hover,
+.morelink a:hover {
+    background-color: #006978!important;
+}
+
+.commentarea .md a:visited {
+    color: #006978!important;
+}
