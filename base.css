@@ -327,6 +327,9 @@ body>.content {
 .side .flair {
     line-height: 2;
 }
+.sidecontentbox a.helplink {
+    margin: 0;
+}
 
 /* Sidebar: search */
 #search input[type='text'] {
