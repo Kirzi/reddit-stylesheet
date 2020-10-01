@@ -21,6 +21,7 @@ a,
 .btn,
 .button,
 .morelink a,
+.message-button .c-btn,
 .res-nightmode .btn a,
 .res-nightmode .usertext button,
 .res-nightmode .btn,
@@ -37,6 +38,7 @@ a,
 .usertext button:hover,
 .btn:hover,
 .button:hover,
+.message-button .c-btn:hover,
 .morelink a:hover {
     background-color: #006978!important;
 }

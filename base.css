@@ -28,7 +28,7 @@ body>.content {
 .res-nightmode .comments-page .link,
 .res-nightmode .commentarea {
     background-color: #333;
-    box-shadow: 0 1px 3px 1px #000;  
+    box-shadow: 0 1px 3px 1px #000;
 }
 .linklisting>.comment {
     margin: 0;
@@ -44,6 +44,7 @@ body>.content {
 .usertext button,
 .btn,
 .button,
+.message-button .c-btn,
 .res-nightmode .btn a,
 .res-nightmode .usertext button,
 .res-nightmode .btn,
@@ -78,10 +79,12 @@ body>.content {
     text-decoration: none;
     letter-spacing: 0;
 }
-.morelink a {
+.morelink a,
+.message-button .c-btn {
     box-shadow: 0 1px 1px rgba(0,0,0,0.1), 0 1px 1px rgba(0,0,0,0.2);
 }
-.morelink a:hover {
+.morelink a:hover,
+.message-button .c-btn:hover {
     box-shadow: 0 5px 10px rgba(0,0,0,0.1), 0 2px 2px rgba(0,0,0,0.2);
 }
 .morelink,
@@ -89,6 +92,11 @@ body>.content {
     background: transparent;
     border: 0px;
 }
+
+.message-button .c-btn {
+    width: 300px;
+}
+
 .res-nightmode .morelink a {
     color: #fff!important;
 }
@@ -105,7 +113,7 @@ body>.content {
 
 /* Header: subreddit banner  */
 #header {
-    min-height: 100px; 
+    min-height: 100px;
     box-shadow: 0 1px 5px #aaa;
     border: 0;
 }
@@ -191,8 +199,8 @@ body>.content {
 #header .tabmenu {
     margin-left: 40px;
 }
-#header .tabmenu li { 
-    margin: 0; 
+#header .tabmenu li {
+    margin: 0;
 }
 #header .tabmenu li a {
     background-color: transparent;
@@ -263,7 +271,7 @@ body>.content {
     margin: 20px;
     background-color: transparent;
 }
-.linkinfo, 
+.linkinfo,
 .res-nightmode .side .linkinfo,
 .linkinfo .shortlink input,
 .side .titlebox form.toggle,
@@ -280,11 +288,11 @@ body>.content {
 .sidecontentbox .more a {
     font-size: 12px;
 }
-.side .linkinfo, 
+.side .linkinfo,
 .side .linkinfo .shortlink input,
 .side .titlebox form.toggle label,
 .side .tagline,
-.side .titlebox div.tagline a, 
+.side .titlebox div.tagline a,
 .side .titlebox .flair,
 .side .fancy-toggle-button .add,
 .side .fancy-toggle-button .remove,
@@ -370,7 +378,7 @@ body>.content {
 }
 
 /* Sidebar: votes box */
-.linkinfo, 
+.linkinfo,
 .linkinfo .shortlink input {
     border: 0;
     text-align: center;
@@ -406,6 +414,7 @@ body>.content {
 /* Sidebar: mod area */
 .sidecontentbox .content {
     border: 0;
+    padding: 0;
     overflow: visible;
 }
 
@@ -584,10 +593,10 @@ p.tagline .flair {
 }
 
 /* Main: lists */
-.md ul li, 
-.md ol li, 
-.md table tr, 
-.md table thead { 
+.md ul li,
+.md ol li,
+.md table tr,
+.md table thead {
     border-radius: 2px;
 }
 .side .md ul li {
@@ -627,14 +636,14 @@ p.tagline .flair {
 }
 
 /* Main: moderator/submitter/friend */
-.entry .tagline .moderator, 
-.res .entry .tagline .moderator, 
+.entry .tagline .moderator,
+.res .entry .tagline .moderator,
 .res-nightmode .entry .tagline .moderator,
-.entry .tagline .submitter, 
-.res .entry .tagline .submitter, 
+.entry .tagline .submitter,
+.res .entry .tagline .submitter,
 .res-nightmode .entry .tagline .submitter,
-.entry .tagline .friend, 
-.res .entry .tagline .friend, 
+.entry .tagline .friend,
+.res .entry .tagline .friend,
 .res-nightmode .entry .tagline .friend {
     font-weight: 700!important;
     font-size: 12px!important;
@@ -684,7 +693,7 @@ p.tagline .flair {
     padding: 10px;
     margin: 3px;
 }
-.score, 
+.score,
 .linkinfo .totalvotes {
     padding: 2px;
 }
@@ -761,7 +770,7 @@ body.mod-toolbox .tb-general-button /*"comments flat view"*/ {
     margin-bottom: 10px!important;
 }
 
-.comment .child, 
+.comment .child,
 .comment .showreplies {
     border:0!important;
 }
@@ -847,8 +856,8 @@ div.thing.reported,
 .commentarea .comment .comment .comment .comment .comment .comment .comment .comment div.thing.reported,
 .commentarea .comment .comment .comment .comment .comment .comment .comment .comment .comment div.thing.spam,
 .commentarea .comment .comment .comment .comment .comment .comment .comment .comment .comment div.thing.reported,
-.commentarea .comment .comment .comment .comment .comment .comment .comment .comment .comment .comment div.thing.spam, 
-.commentarea .comment .comment .comment .comment .comment .comment .comment .comment .comment .comment div.thing.reported, 
+.commentarea .comment .comment .comment .comment .comment .comment .comment .comment .comment .comment div.thing.spam,
+.commentarea .comment .comment .comment .comment .comment .comment .comment .comment .comment .comment div.thing.reported,
 .commentarea .comment .comment .comment .comment .comment .comment .comment .comment .comment .comment .comment div.thing.spam,
 .commentarea .comment .comment .comment .comment .comment .comment .comment .comment .comment .comment .comment div.thing.reported {
     background: #F9ADAD!important;
@@ -878,8 +887,8 @@ div.thing.reported,
 .res-nightmode .commentarea .comment .comment .comment .comment .comment .comment .comment .comment div.thing.reported,
 .res-nightmode .commentarea .comment .comment .comment .comment .comment .comment .comment .comment .comment div.thing.spam,
 .res-nightmode .commentarea .comment .comment .comment .comment .comment .comment .comment .comment .comment div.thing.reported,
-.res-nightmode .commentarea .comment .comment .comment .comment .comment .comment .comment .comment .comment .comment div.thing.spam, 
-.res-nightmode .commentarea .comment .comment .comment .comment .comment .comment .comment .comment .comment .comment div.thing.reported, 
+.res-nightmode .commentarea .comment .comment .comment .comment .comment .comment .comment .comment .comment .comment div.thing.spam,
+.res-nightmode .commentarea .comment .comment .comment .comment .comment .comment .comment .comment .comment .comment div.thing.reported,
 .res-nightmode .commentarea .comment .comment .comment .comment .comment .comment .comment .comment .comment .comment .comment div.thing.spam,
 .res-nightmode .commentarea .comment .comment .comment .comment .comment .comment .comment .comment .comment .comment .comment div.thing.reported{
     background: #6A1E1E!important;
@@ -917,9 +926,9 @@ div.thing.reported,
     color: #fff!important;
 }
 
-.res .entry.res-selected, 
+.res .entry.res-selected,
 .res .entry.res-selected .md-container {
-    background-color: transparent!important; 
+    background-color: transparent!important;
 }
 
 /* ---------------------------------------------- Submit thread ---------------------------------------------- */
@@ -927,7 +936,7 @@ div.thing.reported,
 .content.submit .roundfield.info-notice,
 .linefield,
 .roundfield,
-.res-nightmode .content .roundfield, 
+.res-nightmode .content .roundfield,
 .res-nightmode .content.submit .roundfield,
 .res-nightmode .infobar:not(.newsletterbar) {
     background: transparent!important;
@@ -988,11 +997,11 @@ div#reddit-field {
 }
 
 .wiki-page .wikititle,
-.wiki-page-content .md h1, 
-.wiki-page-content .md h2, 
-.wiki-page-content .md h3, 
-.wiki-page-content .md h4, 
-.wiki-page-content .md h5, 
+.wiki-page-content .md h1,
+.wiki-page-content .md h2,
+.wiki-page-content .md h3,
+.wiki-page-content .md h4,
+.wiki-page-content .md h5,
 .wiki-page-content .md h6 {
     color: #666;
 }
@@ -1074,14 +1083,14 @@ div#reddit-field {
 }
 
 /* RES: pinHeader */
-body.pinHeader-subanduser #header-bottom-right.res-navTop, 
+body.pinHeader-subanduser #header-bottom-right.res-navTop,
 body.pinHeader-userbar #header-bottom-right.res-navTop {
-    background-color: rgba(150, 150, 150, 0.5)!important; 
+    background-color: rgba(150, 150, 150, 0.5)!important;
     margin-top: 4px;
 }
-body.pinHeader-subanduser #header-bottom-right.res-navTop:hover, 
+body.pinHeader-subanduser #header-bottom-right.res-navTop:hover,
 body.pinHeader-userbar #header-bottom-right.res-navTop:hover {
-    background-color: rgba(0,0,0, 0.7)!important; 
+    background-color: rgba(0,0,0, 0.7)!important;
     margin-top: 4px;
 }
 .pinHeader-userbar .RESHoverDropdownList,
@@ -1171,7 +1180,7 @@ div.NERPageMarker {
 
 .res-nightmode .wiki-page .wiki-page-content .md.wiki > .toc ul,
 .res-nightmode .md code,
-.res-nightmode .md pre, 
+.res-nightmode .md pre,
 .res-nightmode .content .md pre {
     background: transparent;
 }
@@ -1213,13 +1222,13 @@ div.NERPageMarker {
     background: transparent!important;
 }
 
-.link:hover, 
+.link:hover,
 .link.RES-keyNav-activeElement {
 	border-right: 2px solid #666;
 }
 
 .linkflairlabel,
-.flairoptionpane .linkflairlabel, 
+.flairoptionpane .linkflairlabel,
 .search-result-header .linkflairlabel {
     color: #fff!important;
     background-color: #666;
