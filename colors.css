@@ -38,8 +38,8 @@ a,
 .usertext button:hover,
 .btn:hover,
 .button:hover,
-.message-button .c-btn:hover,
-.morelink a:hover {
+.morelink a:hover,
+.message-button .c-btn:hover {
     background-color: #006978!important;
 }
 
