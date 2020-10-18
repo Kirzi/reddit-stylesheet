@@ -28,7 +28,10 @@ body>.content {
 .res-nightmode .comments-page .link,
 .res-nightmode .commentarea {
     background-color: #333;
-    box-shadow: 0 1px 3px 1px #000;
+    box-shadow: 0 1px 3px 1px #000;  
+}
+.res-nightmode .link {
+    background-color: #333!important;
 }
 .linklisting>.comment {
     margin: 0;
@@ -97,7 +100,8 @@ body>.content {
     width: 300px;
 }
 
-.res-nightmode .morelink a {
+.res-nightmode .morelink a,
+.res-nightmode .message-button .c-btn {
     color: #fff!important;
 }
 
@@ -680,6 +684,11 @@ p.tagline .flair {
     border-color: transparent;
 }
 
+/* Main: misc tweaks */
+.linefield-content {
+    background: transparent!important;
+}
+
 /* ---------------------------------------------- Comments Page ---------------------------------------------- */
 
 .comments-page .link .entry .buttons li a {
@@ -828,7 +837,9 @@ body.mod-toolbox .tb-general-button /*"comments flat view"*/ {
 .res-nightmode .spam>.entry:hover .flat-list li a {
     color: inherit!important;
 }
-.mod-toolbox.res-nightmode .comment.spam > .child {
+.mod-toolbox.res-nightmode .comment.spam > .child,
+.usertext.grayed .usertext-body, 
+.res-nightmode .usertext.grayed .usertext-body {
     background-color: transparent!important;
 }
 
@@ -926,9 +937,11 @@ div.thing.reported,
     color: #fff!important;
 }
 
-.res .entry.res-selected,
-.res .entry.res-selected .md-container {
-    background-color: transparent!important;
+.res .entry.res-selected, 
+.res .entry.res-selected .md-container,
+.res-nightmode .res .entry.res-selected, 
+.res-nightmode .res .entry.res-selected .md-container {
+    background-color: transparent!important; 
 }
 
 /* ---------------------------------------------- Submit thread ---------------------------------------------- */
