@@ -978,6 +978,10 @@ div#reddit-field {
     display: none;
 }
 
+#newlink-with-image-upload .image-upload-drop-target {
+    background-color: transparent!important;
+}
+
 .submit-page .formtabs-content {
     margin: 0 auto;
 }
